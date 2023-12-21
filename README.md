@@ -66,6 +66,7 @@ python -u main.py --model resnet18 --node-type IFNode --dataset CUB2002011 --ste
 ```
 
 注意：由于braincog的python包没有更新，本实验是在将braincog项目下载到本地后，然后调用项目里面的包实现的，为了项目的简洁性，提供的代码只有图像分类的训练代码，调用的包并没有上传到本项目。
+
 3.使用braincog提供的LIF神经元，模拟大脑中与听觉有关的脑区：前额皮层、听觉皮层，然后在大脑皮层中整合记忆
 
 训练样本：使用.mid文件进行训练，该模型使用了[晴天，周杰伦]、[melody，陶喆]这两首歌进行训练，然后分别生成周杰伦风格和陶喆风格的sample。
