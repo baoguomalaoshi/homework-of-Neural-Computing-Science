@@ -1,4 +1,4 @@
-# homework-of-Neural-Computing-Science
+# Homework-of-Neural-Computing-Science
 ## 第3组 组员
 刘晨远	杨武略	李帅博	李佐磊	杨佳逸
 ## 组员分工
