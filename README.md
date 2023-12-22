@@ -69,6 +69,18 @@ python -u main.py --model resnet50 --node-type IFNode --dataset cifar100 --step 
 python -u main.py --model resnet18 --node-type IFNode --dataset CUB2002011 --step 4 --batch-size 4 --act-fun QGateGrad --device 0 --num-classes 200
 ```
 
+最终在测试集上的结果为:
+
+| epoch | top-1 acc(%) |
+| ----- | ------------ |
+| 20    | 4.78         |
+| 40    | 7.15         |
+| 60    | 10.17        |
+| 80    | 12.12        |
+| 100   | 13.13        |
+
+从目前的实验结果看，在细粒度图像分类数据集上训练效果并不好，epoch=100时的准确率也只有13.13%。
+
 注意：由于braincog的python包没有更新，本实验是在将braincog项目下载到本地后，然后调用项目里面的包实现的，为了项目的简洁性，提供的代码只有图像分类的训练代码，调用的包并没有上传到本项目。
 
 3.使用braincog提供的LIF神经元，模拟大脑中与听觉有关的脑区：前额皮层、听觉皮层，然后在大脑皮层中整合记忆
